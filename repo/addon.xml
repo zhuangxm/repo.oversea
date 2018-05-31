@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon version="0.0.4" id="repo.oversea" name="oversea repo" provider-name="martin">
+<addon version="0.0.4" id="repo.oversea" name="martin's Addons" provider-name="martin">
   <extension point="xbmc.addon.repository" name="martin's Addons">
           <info compressed="false">http://raw.github.com/zhuangxm/repo.oversea/master/pluginStore/addons.xml</info>
           <checksum>http://raw.github.com/zhuangxm/repo.oversea/master/pluginStore/addons.xml.md5</checksum>
