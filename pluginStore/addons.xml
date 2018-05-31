@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<addons><addon id="repo.oversea" name="oversea repo" provider-name="martin" version="0.0.3">
+  <extension name="martin's Addons" point="xbmc.addon.repository">
+          <info compressed="false">http://raw.github.com/zhuangxm/repo.oversea/master/pluninStore/addons.xml</info>
+          <checksum>http://raw.github.com/zhuangxm/repo.oversea/master/pluginStore/addons.xml.md5</checksum>
+          <datadir zip="true">http://raw.github.com/zhuangxm/repo.oversea/master/pluginStore/</datadir>
+  </extension>	
+	<extension name="jdollar's Addons" point="xbmc.addon.repository">
+		<info compressed="false">http://raw.github.com/jdollarKodi/repository.jdollar/master/addons.xml</info>
+		<checksum>http://raw.github.com/jdollarKodi/repository.jdollar/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/jdollarKodi/repository.jdollar/master/pluginStore/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>martin's Addons</summary>
+		<description>Repository that houses martin's addons</description>
+		<platform>all</platform>
+	</extension>
+</addon><addon id="plugin.video.overseaplayer" name="oversea chinese cinema" provider-name="martin" version="1.0.3">
+  <requires>
+    <import addon="script.module.requests" version="1.1.0" />
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.beautifulsoup4" version="4.3.2" />
+    <import addon="script.module.js2py" version="0.4.3" />
+  </requires>
+  <extension library="addon.py" point="xbmc.python.pluginsource">
+  <provides>video</provides>
+  </extension>
+  
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>XBMC Player for oversea chinese</summary>
+    <description>Search and play all the movie on dnvod olevod, fork from plugin.video.dnvodPlayer</description>
+    <disclaimer>For personal use only</disclaimer>
+  </extension>
+</addon></addons>

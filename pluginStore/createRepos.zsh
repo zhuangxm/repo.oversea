@@ -3,6 +3,3 @@
 PLUGIN_STORE_DIR=.
 
 python3 create_repository.py ../repo https://github.com/zhuangxm/plugin.video.overseaplayer.git:
-if [[ -f addons.xml ]]; then
-  rm -rf addons.xml*
-fi

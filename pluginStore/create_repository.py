@@ -309,6 +309,7 @@ def create_repository(
     for addon_metadata in metadata:
         root.append(addon_metadata.root)
     tree = xml.etree.ElementTree.ElementTree(root)
+
     with io.BytesIO() as info_file:
         tree.write(info_file, encoding='UTF-8', xml_declaration=True)
         info_contents = info_file.getvalue()
@@ -317,6 +318,7 @@ def create_repository(
         info_file = gzip.open(info_path, 'wb')
     else:
         info_file = open(info_path, 'wb')
+        
     with info_file:
         info_file.write(info_contents)
 
